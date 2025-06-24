@@ -10,3 +10,42 @@ body{
     font-size: 1.4rem;
     padding: 20px;
 }
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 200px;
+    height: 150px;
+    border: 2px solid #212121;
+    margin : 20px;
+    cursor: pointer;
+}
+.box:hover{
+    transform : scale(1.05);
+    transition: 0.5s ease-in-out ;
+}
+#aqua{
+   background-color: aqua; 
+}
+#orangered{
+    background-color: orangered; 
+}
+#greenyellow{
+    background-color: greenyellow; 
+}
+#rebeccapurple{
+    background-color: rebeccapurple; 
+}
