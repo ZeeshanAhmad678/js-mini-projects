@@ -3,9 +3,6 @@ const body = document.querySelector('body');
 const h2 = document.querySelector('h2');
 const h3 = document.querySelector('h3');
 
-
-
-
 buttons.forEach( (button) =>{
     button.addEventListener('click' , (event) =>{
         switch(event.target.id){
