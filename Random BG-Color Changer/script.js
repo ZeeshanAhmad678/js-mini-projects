@@ -10,17 +10,18 @@ function randomColor(){
 let intervalId = null;
 
 document.querySelector('#start').addEventListener('click', () =>{
-    // if(intervalId == null){
+    if(intervalId == null){
+        intervalId = setInterval( () => {
+            let currColor = randomColor();
+            document.body.style.backgroundColor = currColor;
+        } , 500)
 
-    // }
-    intervalId = setInterval( () => {
-        let currColor = randomColor();
-        document.body.style.backgroundColor = currColor;
-    } , 500)
+        document.querySelector('#start').disabled = true;}
 });
 
 
 document.querySelector('#stop').addEventListener('click', () => {
     clearInterval(intervalId);
     intervalId = null;
+    document.querySelector('#start').disabled = false;
 })
